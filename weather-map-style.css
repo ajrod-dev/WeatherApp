@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #111111;
+    color: #FFF;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 50px 40px 310px 550px;
+    justify-content: center;
+    grid-auto-rows: minmax(200px, auto);
+}
+
+h1 {
+    font-size: 20px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+    /*width: 950px*/
+}
+
+label {
+    font-size: 20px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 15px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: lighter;
+}
+
+.grid-item {
+    background-color: #242424;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    border: 2px solid rgb(179, 179, 179);
+    border-radius: 5px;
+
+}
+
+.grid-item1 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    display: flex;
+    justify-content: space-between;
+}
+.grid-item2 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.grid-item8 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.grid-item>p{
+text-align: center;
+}
+
+.icon {
+    justify-content: center;}
+
+hr {
+    border-color: rgb(179, 179, 179);
+}
+
+.iconOuterDiv {
+    display: flex;
+    justify-content: center;
+}
+
+#searchPlace {
+    height: 25px;
+    margin-top: 5px;
+}
+
+#forSearchPlace {
+    margin-top: 5px;
+}
+
+#searchSubmit {
+    height: 25px;
+    margin-top: 5px;
+}
+
+@media (max-width: 500px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 50px) repeat(5, 290px) 500px;
+
+    }
+}
+
+/*#colorMode {*/
+/*    height: 25px;*/
+/*    margin-left: auto;*/
+/*    margin-bottom: 15px;*/
+/*}*/
+
+/*.outerDivButton {*/
+/*    display: flex;*/
+/*}*/
+
+/*.outerDivButton>button {*/
+/*    justify-items: flex-end;*/
+/*}*/
+
+
+
+
+
+
